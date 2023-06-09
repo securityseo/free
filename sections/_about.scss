@@ -1,0 +1,9 @@
+.about{
+    margin-top: 150px;
+
+    &_row{
+        @include flex(center,start);
+        flex-direction: column;
+        gap: 83px;
+    }
+}

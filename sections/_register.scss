@@ -1,0 +1,89 @@
+.register{
+    margin-top: 77px;
+
+    &_text{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &_title{
+        font-weight: 400;
+        line-height: 140%;
+        color: #181818;
+        @include adaptive-value('font-size',38,32);
+
+        @include media(1020){
+            text-align: center
+        }
+    }
+
+    &_subtitle{
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 110%;
+        color: #181818;
+        @include adaptive-value('font-size',26,20);
+
+        @include media(1020){
+            text-align: center
+        }
+    }
+
+    &_row{
+        @include flex(center,start);
+        gap: 30px;
+        margin: 25px 0;
+
+
+        @include media(1020){
+            flex-direction: column;
+        }
+    }
+
+    &_first{
+        width: 350px;
+        height: 71px;
+        padding-left: 29px;
+        border: 1px solid #181818;
+        border-radius: 10px; 
+
+        @include media(360){
+            width: 300px;
+        }
+    }
+
+    &_second{
+        width: 350px;
+        height: 71px;
+        padding-left: 29px;
+        border: 1px solid #181818;
+        border-radius: 10px; 
+
+        @include media(360){
+            width: 300px;
+        }
+    }
+
+    &_check{
+        font-weight: 400;
+        line-height: 140%;
+        color: #181818;
+        @include adaptive-value('font-size',18,15);
+
+        @include media(1020){
+            text-align: center
+        }
+    }
+
+    &_checkbox{
+        
+        @include media(1020){
+            text-align: center
+        }
+    }
+
+    &_marked{
+        color: $blue;
+    }
+}
